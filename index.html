@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>تهكير حسام الدين طيفور</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding-top: 50px;
+        }
+        #terminal {
+            width: 80%;
+            max-width: 600px;
+            margin: auto;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        pre {
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: left;
+        }
+        @keyframes caret {
+            from,
+            to {
+                border: none;
+            }
+            50% {
+                border-right: 8px solid white;
+            }
+        }
+        #caret {
+            border-right: 8px solid white;
+            animation: caret 1s step-end infinite;
+        }
+    </style>
+</head>
+<body>
+    <div id="terminal">
+        <pre id="output" lang="en" dir="auto"></pre>
+    </div>
+
+    <script>
+        let output = document.getElementById('output');
+
+        function printLine(line) {
+            output.innerHTML += line + '<br>';
+        }
+
+        printLine('root@sudocss:~# ./hack Hussam');
+        setTimeout(() => {
+            printLine('تهكير حسام الدين طيفور 10%..');
+        }, 1000);
+        setTimeout(() => {
+            printLine('تهكير حسام الدين طيفور 20%..');
+        }, 2000);
+        setTimeout(() => {
+            printLine('تهكير حسام الدين طيفور 30%..');
+        }, 3000);
+        setTimeout(() => {
+            printLine('تهكير حسام الدين طيفور 40%..');
+        }, 4000);setTimeout(() => {
+            printLine('تهكير حسام الدين طيفور 50%..');
+        }, 5000);
+        setTimeout(() => {
+            printLine('تهكير حسام الدين طيفور 60%..');
+        }, 6000);
+        setTimeout(() => {
+            printLine('تهكير حسام الدين طيفور 70%..');
+        }, 7000);
+        setTimeout(() => {
+            printLine('تهكير حسام الدين طيفور 80%..');
+        }, 8000);
+        setTimeout(() => {
+            printLine('تهكير حسام الدين طيفور 90%..');
+        }, 9000);
+        setTimeout(() => {
+            printLine('تهكير حسام الدين طيفور 100%..');
+        }, 10000);
+        setTimeout(() => {
+            printLine('تهكير ناجح!');
+        }, 10001);
+        setTimeout(() => {
+            printLine('root@sudocss:~# <span id="caret"></span>');
+        }, 10001);
+    </script>
+</body>
+</html>
